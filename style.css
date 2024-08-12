@@ -1,125 +1,58 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+This is the CSS filr of Weather forcastion Web Appliction,
 
 body {
-    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("https://c8.alamy.com/comp/2NKXX3T/website-or-mobile-app-landing-page-sky-with-clouds-sun-rays-bursting-through-the-clouds-3d-vector-illustration-2NKXX3T.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f3f4fc;
+    margin: 0;
 }
 
-.weatherContainer {
-    margin: 2rem;
-    padding: 2rem 1rem;
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0px 0px 19px 0px #18bd9e;
+.container {
+    background-color: #060505;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
 }
 
-#weatherForm input {
-    border: none;
-    color: black;
-    outline: none;
-    font-size: 1rem;
-    font-family: sans-serif;
-    background: transparent;
-}
-
-#weatherForm ul li {
-    list-style: none;
-}
-
-.searchBtn {
-    background: transparent;
-    border: none;
-}
-
-.searchBtn ul li {
-    list-style: none;
-    font-size: 1.2rem;
-}
-
-#weatherForm {
-    display: flex;
-    justify-content: space-around;
-}
-
-.appHeading {
+h1 {
     text-align: center;
-    margin-bottom: 1rem;
-    font-family: 'Poppins', sans-serif;
+    color: orangered;
 }
 
-#city {
-    text-transform: capitalize;
-    text-align: center;
-    margin-top: 1rem;
-    font-family: 'Poppins', sans-serif;
-}
-
-.weatherContainer img {
-    width: 50%;
-}
-
-#temp {
-    word-spacing: -8px;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    font-family: 'Poppins', sans-serif;
-}
-
-#temp sup {
-    font-size: 1.5rem;
-}
-
-.weatherMain {
-    font-family: sans-serif;
-}
-
-#todayTime,
-.todayDates {
-    font-family: sans-serif;
-    line-height: 2rem;
-}
-
-
-/* Utility Classes */
-.d-flex {
+.input-container {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.justify-space-around {
-    justify-content: space-around;
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
 }
 
-.justify-space-center {
-    justify-content: center;
+button {
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.align-items-center {
-    align-items: center;
+button:hover {
+    background-color: orange;
 }
 
-.f-col {
-    flex-direction: column;
-}
-
-/* Media Query for Responsive */
-@media screen and (max-width: 307px) {
-    #weatherForm {
-        flex-direction: column;
-    }
-
-    #weatherForm input {
-        text-align: center;
-        margin-bottom: 1rem;
-    }
+.weather-info {
+    text-align: center;
+    font-size: 18px;
+    color: #cf5606;
 }
