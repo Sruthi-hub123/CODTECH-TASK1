@@ -47,3 +47,4 @@ const apiKey = 'f00c38e0279b7bc85480c3fe775d518c';
 
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
